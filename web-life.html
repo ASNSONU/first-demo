@@ -1,27 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>my web</title>
 	<style>
-		:root
+		:root {
+			--deep: #102c26;
+			--champ: #f7e7ce;
+			--lvory: #fff2f1;
+			--donkey-b: #a79277;
+			--p1: #ecbad0;
+			--p2: #dcb2a3;
+			--p3: #b25681;
+			--p4: #91759c;
+			--p5: #31294c;
+			--p6: #0f0924;
+		}
+		*{
+			border: 1px solid red;
+		}
+		body,
+		html {
+			background-color: var(--lvory);
+			margin: 0;
+			padding: 0;
+			height: 100%;
+		}
+
+		.logo-top {
+			text-align: center;
+			font-size: 80px;
+			font-family: Cooper Black;
+			height: 120px;
+			background-color: var(--lvory);
+			color: white;
+			/* text-shadow:
+				0 0 10px var(--p6)
+				0 0 20px var(--p6)
+				0 0 30px var(--p6)
+				0 0 40px var(--p6)
+				0 0 50px var(--p6)
+				0 0 60px var(--p6); */
+		}
+		.li-home
 		{
-			--deep:#102c26;
-			--champ:#f7e7ce;
-			--lvory:#fff2f1;
-			--donkey-b:#a79277;
-			--p1:#ecbad0;
-			--p2:#dcb2a3;
-			--p3:#b25681;
-			--p4:#91759c;
-			--p5:#31294c;
-			--p6:#0f0924;
+			margin-left: 180px;
+		}
+		
+nav {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background-color: cyan;
+		}
+
+		.nav-links {
+			display: flex;
+			list-style: none;
+			gap: 30px;
+
+
+		}
+
+		.nav-links a {
+			text-decoration: none;
+			color: white;
+			font-size: larger;
+			padding: 8px 12px;
+			transition: 0.3s ease;
+		}
+
+		.nav-links a:hover {
+			background-color: white;
+			border-radius: 5px;
+			color: cyan;
+		}
+
+		.logo {
+			color: white;
+			font-size: 30px;
+			font-weight: 900;
+		}
+
+		.search {
+			display: flex;
+			align-items: center;
+			background-color: white;
+			border-radius: 20px;
+			overflow: hidden;
+		}
+
+		/* this for input*/
+		.search input {
+			border: none;
+			outline: none;
+			padding: 0px 12px;
+			font-size: 14px;
+		}
+
+		/*  button on button*/
+		.search button {
+			border: none;
+			background-color: #00bcd4;
+			color: white;
+			padding: 8px 12px;
+			cursor: pointer;
+			transition: 0.3s;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+		}
+
+		.search button:hover {
+			background-color: #0097a7;
+		}
+
+		.search:focus-within {
+			box-shadow: 0 0 5px #00bcd4;
+		}
+
+		.search input,
+		.search button {
+			height: 40px;
+			display: flex;
+			align-items: center;
 		}
 	</style>
 </head>
+
 <body>
-    <h1>my name is sumit</h1>
+	<div class="first">welcome</div>
+	<header>
+		<nav>
+			<div class="logo">ASN</div>
+			<ul class="nav-links">
+				<li><a href="#">home</a></li>
+				<li><a href="#">gallery</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">about</a></li>
+			</ul>
+			<div class="search">
+				<input type="text" placeholder="search">
+				<button>search</button>
+			</div>
+		</nav>
+	</header>
+	<h1>my name is sumit</h1>
 	<p>hello world</p>
 </body>
+
 </html>
