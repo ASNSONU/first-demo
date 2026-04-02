@@ -6,74 +6,114 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>project 424</title>
 	<style>
-		body{
+		/* *{
+			border: #ffffff solid 1px;
+		} */
+		body {
 			margin: 0;
 		}
-		.navbar{
-			
-			display:flex;
+
+		.navbar {
+
+			display: flex;
 			justify-content: space-between;
 			align-items: center;
 			background-color: #ea0303;
 		}
-		.logo{
+
+		.logo {
 			font-weight: bold;
-			font-size:30px;
+			font-size: 30px;
 			color: white;
 			margin: 0 0 4px 10px;
 		}
-		.menu{
+
+		.menu {
 			display: flex;
 			list-style-type: none;
 			margin: 0;
 			padding: 0;
-			margin:10px;
+			margin: 10px;
 
 		}
+
 		.menu li {
 			margin-left: 10px;
 
 		}
+
 		.menu li a {
 			text-decoration: none;
 			color: #ffffff;
-			font-weight:bold ;
+			font-weight: bold;
 			font-size: 20px;
 			padding: 10px 20px;
 			transition: .4s;
 		}
-		.menu li a:hover{
+
+		.menu li a:hover {
 			background-color: gray;
 		}
 
+		.nav-search {
+			display: flex;
+			align-items: center;
+			margin-right: 10px;
+		}
+
+		.nav-search input {
+			padding: 8px 15px;
+			border: none;
+			outline: none;
+			border-radius: 20px 0 0 20px;
+			font-size: 16px;
+			width: 120px;
+			height: 21px;
+		}
+
+		.nav-search button {
+			padding: 0;
+			padding: 8px 15px;
+			height: 37px;
+			border: none;
+			background-color: black;
+			color: white;
+			font-weight: bold;
+			border-radius: 0 20px 20px 0;
+			cursor: pointer;
+			position: relative;
+			top: -1px;
+			transition: 0, 3s;
+			right: 4px;
+		}
+
+		.nav-search buttton:hover {
+			background-color: gray;
+		}
 	</style>
 </head>
 
 <body>
+	<header id="home">
+		<nav class="navbar">
+			<div class="logo">
+				asnsonu
+			</div>
+			<ul class="menu">
+				<li><a href="#home">home</a></li>
+				<li><a href="#home">about</a></li>
+				<li><a href="#home">conact</a></li>
+				<li><a href="#home">project</a></li>
+			</ul>
+			<div class="nav-search">
+				<form>
+					<input type="text" name="" id="" placeholder="search">
+					<button type="button">search</button>
+				</form>
 
-	<body>
-		<header id="home">
-			<nav class="navbar">
-				<div class="logo">
-					asnsonu
-				</div>
-				<ul class="menu">
-					<li><a href="#home">home</a></li>
-					<li><a href="#home">about</a></li>
-					<li><a href="#home">conact</a></li>
-					<li><a href="#home">project</a></li>
-				</ul>
-				<div class="nav-search">
-					<form>
-						<input type="text" name="" id="">
-						<button type="button">search</button>
-					</form>
-
-				</div>
-			</nav>
-		</header>
-	</body>
-
+			</div>
+		</nav>
+	</header>
 </body>
 
 </html>
